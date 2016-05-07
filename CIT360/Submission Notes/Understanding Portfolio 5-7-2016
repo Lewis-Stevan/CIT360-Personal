@@ -1,7 +1,11 @@
 Understanding Portfolio 5/7/2106
 
 Hibernate
-I learned how to connect hibernate with java and while using the sql database to create a session. Most of what I learned was from Rachel Yancey's discussion during our team meeting. She showed us a tutorial of how it works and the template that she used to run her program. Altogether the main function of hibernate is to map Java classes to database tables. In order to map these classes with the database tables is implemenet them with an XML file.
+I learned how to connect hibernate with java and while using the sql database to create a session. 
+Most of what I learned was from Rachel Yancey's discussion during our team meeting. 
+She showed us a tutorial of how it works and the template that she used to run her program. 
+Altogether the main function of hibernate is to map Java classes to database tables. 
+In order to map these classes with the database tables is implemenet them with an XML file.
 Here's the team meeting link https://www.youtube.com/watch?v=-P5oR99XDLQ
 
 This week I was able to complete setting up Java Eclipse and following the professors video's in order to push my code onto github.
@@ -12,3 +16,6 @@ I am unsure where to start for building a personal web app of mine which is a pa
 Next week for my team I will be presenting on both:
 Client and Server Sockets - Stevan Lewis 
 Use Case Document - Stevan Lewis
+
+For my sandbox code I was going to start with examples available on github and then go from there.
+https://github.com/clipperz/password-manager
