@@ -19,9 +19,9 @@ public class JCollections {
 		System.out.println("Currently the array list contains: " + test);
 		
 		// Add element at the given index
-		test.add(0, "John");
+		test.add(0, "Joe");
 		test.add(1, "Jill");
-		
+				
 		// Remove Elements from array list
 		test.remove("John");
 		test.remove("Bob");
