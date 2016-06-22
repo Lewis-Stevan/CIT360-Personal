@@ -9,8 +9,7 @@ public class MultiHandler implements Handler {
 
 	public void handleIt(Object... parameters) {
 
-		// pull the CalculatorActivity from the Calculator class and assigns to
-		// activity
+		// Pulls the CalculatorActivity from the Calculator class and assigns to the activity
 		CalculatorActivity activity = (CalculatorActivity) parameters[0];
 		// declare Textviews from textViews pass from Calculator
 
