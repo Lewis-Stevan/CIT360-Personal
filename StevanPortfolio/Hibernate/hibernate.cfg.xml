@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+   <property name="hibernate.dialect">
+      org.hibernate.dialect.MySQLDialect
+   </property>
+   <property name="hibernate.connection.driver_class">
+      com.mysql.jdbc.Driver
+   </property>
+   
+ <!--   <property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property> -->
+
+   <!-- Assume test is the database name -->
+   <property name="hibernate.connection.url">
+      jdbc:mysql://localhost:8889/testdb
+   </property>
+   
+     <!-- JDBC connection pool (use the built-in) -->
+     <property name="connection.pool_size">1</property>
+     
+     <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+     
+     <!-- Drop and re-create the database schema on startup -->
+     <property name="hbm2ddl.auto">create</property>
+        
+   <property name="hibernate.connection.username">
+      root
+   </property>
+   <property name="hibernate.connection.password">
+      root123
+   </property>
+
+   <!-- List of XML mapping files -->
+   <mapping resource="Employee.hbm.xml"/>
+
+</session-factory>
+</hibernate-configuration>
