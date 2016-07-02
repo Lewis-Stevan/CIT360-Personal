@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.10" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="Customer" project="StevanPortfolio" file="/StevanPortfolio/SandBox/Customer.java" 
+    binary="false" label="customer" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="63" y="0"/>    
+    <execution id="2">      
+      <position height="72" width="102" x="5" y="124"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="Bank" project="StevanPortfolio" file="/StevanPortfolio/SandBox/Bank.java" 
+    binary="false" label="bank" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="151" y="0"/>    
+    <execution id="4">      
+      <position height="24" width="102" x="111" y="148"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="72" width="102" x="111" y="195"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="User" project="StevanPortfolio" file="/StevanPortfolio/SandBox/User.java" 
+    binary="false" label="user" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="250" y="0"/>    
+    <execution id="8">      
+      <position height="24" width="102" x="217" y="219"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="72" width="102" x="217" y="270"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="24" width="102" x="217" y="465"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="24" width="102" x="217" y="645"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="ATM" project="StevanPortfolio" file="/StevanPortfolio/SandBox/ATM.java" 
+    binary="false" label="atm" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="375" y="0"/>    
+    <execution id="12">      
+      <position height="24" width="102" x="323" y="294"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="72" width="0" x="0" y="341"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="24" width="102" x="323" y="568"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="24" width="102" x="323" y="665"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="72" width="102" x="323" y="621"/>    
+    </execution>  
+  </object>  
+  <object id="23" language="java" name="Account" project="StevanPortfolio" file="/StevanPortfolio/SandBox/Account.java" 
+    binary="false" label="account" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="18">      
+      <position height="24" width="0" x="0" y="365"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="72" width="102" x="429" y="441"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="72" width="102" x="429" y="407"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="Transaction" project="StevanPortfolio" 
+    file="/StevanPortfolio/SandBox/Transaction.java" binary="false" label="transaction" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="585" y="0"/>    
+    <execution id="28">      
+      <position height="24" width="106" x="535" y="431"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="72" width="106" x="535" y="544"/>    
+    </execution>    
+    <execution id="32">      
+      <position height="72" width="106" x="535" y="641"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="addUser(java.lang.String,java.lang.String,java.lang.String):User" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="7" operation="validatePin(java.lang.String):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="11" operation="printUserMenu(User,java.util.Scanner):void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="17" operation="Account(java.lang.String,User,Bank)" asynchronous="false">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="22" operation="printAccountsSummary():void" asynchronous="false">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="25" operation="getAcctBalance(int):double" asynchronous="false">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="27" operation="Transaction(double,java.lang.String,Account)" asynchronous="false">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="31" operation="depositFunds(User,java.util.Scanner):void" asynchronous="false">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="33" operation="transferFunds(User,java.util.Scanner):void" asynchronous="false">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>
+</sequence-diagram>
